@@ -87,11 +87,7 @@ get_header();
 
 								<!-- Aside -->
 								<aside class="article-aside clearfix">
-
-
-
-									
-
+									<?php the_content() ?>
 								</aside>
 								<!-- //Aside -->
 
@@ -103,38 +99,19 @@ get_header();
 
 
 								<section class="article-content clearfix" itemprop="articleBody">
-									<p><img src="/web/images/GioiThieuKiểm toán AZ Việt Nam.png" alt="GioiThieuKiểm toán AZ Việt Nam"></p>
-									<p style="text-align: justify;">Công ty TNHH Hãng Kiểm toán Kiểm toán AZ Việt Nam (Hãng Kiểm toán Kiểm toán AZ Việt Nam), phát triển và trưởng thành từ Công ty Dịch vụ Tư vấn Tài chính Kế toán và Kiểm toán Bộ Tài
-										chính - Thành viên HLB Quốc tế tại Việt Nam (Mạng lưới Kế toán và Tư vấn toàn cầu). Hãng Kiểm toán Kiểm toán AZ Việt Nam là một trong hai tổ chức hợp pháp đầu tiên và lớn nhất của Việt Nam hoạt động trong lĩnh
-										vực Kiểm toán, Tư vấn tài chính, Kế toán, Thuế, Thẩm định giá và các dịch vụ khác được pháp luật cho phép. Hiện nay, Kiểm toán AZ Việt Nam có trụ sở chính đặt tại Hà Nội, chi nhánh tại TP Hồ Chí Minh và chi
-										nhánh tại Quảng Ninh.</p>
-									<p style="text-align: justify;">Theo nhận xét của Giáo sư - Tiến sỹ Vương Đình Huệ nguyên Phó Thủ tướng Chính phủ; xếp hạng của Bộ Tài chính; Hội Kiểm toán viên hành nghề Việt Nam: Kiểm toán AZ Việt Nam hiện nay là
-										Nhà cung cấp dịch vụ lớn “Đầu đàn của Hệ thống các Công ty Kiểm toán Việt Nam”, với khách hàng đa dạng và có dịch vụ kiểm toán Báo cáo quyết toán dự án hoàn thành, dịch vụ xác định giá trị doanh nghiệp xếp hàng
-										nhất của Ngành Kiểm toán độc lập Việt Nam.</p>
-									<p style="text-align: justify;">Cùng với các Công ty kiểm toán Big 4 đang hoạt động tại Việt Nam, Kiểm toán AZ Việt Nam là một trong 5 Doanh nghiệp Kiểm toán năng động có doanh thu hàng năm, hệ thống khách hàng, số
-										Kiểm toán viên và nhân viên lớn nhất hiện nay (trên 100 Kiểm toán viên Việt Nam, 06 Hội viên ACCA, 03 Hội viên CPA Úc, 02 Hội viên CIMA, 01 Hội viên CIA, 34 Thẩm định viên về giá, 36 Chứng chỉ Tư vấn Thủ tục về
-										Thuế và gần 500 nhân viên). Trong gần 30 năm hoạt động, dù dưới hình thức DNNN hay công ty TNHH, tôn chỉ hoạt động của Kiểm toán AZ Việt Nam vẫn luôn là cung cấp những dịch vụ có chất lượng cao nhất vì lợi ích
-										hợp pháp của khách hàng. Khách hàng của chúng tôi bao gồm tất cả các lĩnh vực kinh tế, thành phần kinh tế: Tập đoàn kinh tế, Tổng công ty nhà nước, Công ty có vốn đầu tư nước ngoài, Công ty niêm yết, Công ty cổ
-										phần, Ngân hàng thương mại, các Dự án có sử dụng vốn ODA, vốn viện trợ của Ngân hàng Thế giới (WB), Ngân hàng Phát triển Châu Á (ADB) cũng như các tổ chức tín dụng quốc tế khác và các công trình đầu tư xây dựng
-										cơ bản trong nước và nước ngoài đầu tư vào Việt Nam và đầu tư tại các nước trong khu vực.</p>
-									<p>&nbsp;</p>
+
 								</section>
 
 								<!-- footer -->
 								<!-- //footer -->
 
 								<hr class="divider-vertical">
-								<ul class="pager pagenav">
-									<li class="previous">
-										<a class="hasTooltip" title="" aria-label="Previous article: Thành tựu" href="#" rel="prev" data-original-title="Thành tựu">
-											<span class="icon-chevron-left" aria-hidden="true"></span> <span aria-hidden="true">Trang trước</span> </a>
-									</li>
-									<li class="next">
-										<a class="hasTooltip" title="" aria-label="Next article: Ban điều hành" href="#" rel="next" data-original-title="Ban điều hành">
-											<span aria-hidden="true">Trang sau</span> <span class="icon-chevron-right" aria-hidden="true"></span> </a>
-									</li>
-								</ul>
-
+								<?php
+									if ( comments_open() || get_comments_number() ) :
+										// comments_template();
+									endif;
+									?>
+							
 
 
 							</article>
