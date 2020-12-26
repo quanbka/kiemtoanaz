@@ -14,21 +14,7 @@
 
 get_header();
 ?>
-<nav class="wrap t3-navhelper">
-	<div class="container">
-		<div class="row">
 
-			<div class="span12">
-				<?php
-				if ( function_exists('yoast_breadcrumb') ) {
-				  yoast_breadcrumb( '<ul class="breadcrumb ">','</ul>' );
-				}
-				?>
-			</div>
-
-		</div>
-	</div>
-</nav>
 <nav class="wrap t3-navhelper">
 	<div class="container">
 		<div class="row">
