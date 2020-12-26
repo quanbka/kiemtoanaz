@@ -165,9 +165,9 @@
 										wp_nav_menu(
 											array(
 												'theme_location' => 'menu-1',
-												'walker' => new WPDocs_Walker_Nav_Menu,
 												'container' => 'ul',
-												'menu_class' => 'nav navbar-nav level0'
+												'menu_class' => 'nav navbar-nav level0',
+												'depth' => 1
 											)
 										);
 										?>
