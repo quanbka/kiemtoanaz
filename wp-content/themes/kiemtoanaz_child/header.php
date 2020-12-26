@@ -135,7 +135,7 @@
                 <!-- LOGO -->
                 <div class="span3 logo-image">
                     <h1>
-                        <a href="/web" title="Hãng kiểm toán hàng đầu Việt Nam" style="background-image:url(/web/images/logo.png)">
+                        <a href="/" title="Hãng kiểm toán hàng đầu Việt Nam" style="background-image:url(/web/images/logo.png)">
                             <span>Hãng kiểm toán hàng đầu Việt Nam</span>
                         </a>
                         <small class="site-slogan hidden-phone">Hãng kiểm toán hàng đầu Việt Nam</small>
