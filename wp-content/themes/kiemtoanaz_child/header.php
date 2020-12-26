@@ -15,7 +15,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<base href="https://aasc.com.vn/web/" />
+	<base href="/web/" />
     <link href="/web/index.php?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
     <link href="/web/index.php?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
     <link href="/web/templates/nyirok/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
@@ -23,7 +23,7 @@
     <link href="https://cdn.jsdelivr.net/npm/simple-line-icons@2.4.1/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
     <link href="/web/templates/nyirok/css/k2.css" rel="stylesheet" type="text/css" />
     <link href="/web/media/system/css/modal.css?fdd14942adbdfa542a1acc50bdd84617" rel="stylesheet" type="text/css" />
-    <link href="https://aasc.com.vn/web/plugins/system/popup_anywhere/css/noborder.css" rel="stylesheet" type="text/css" />
+    <link href="/web/plugins/system/popup_anywhere/css/noborder.css" rel="stylesheet" type="text/css" />
     <link href="/web/templates/system/css/system.css" rel="stylesheet" type="text/css" />
     <link href="/web/templates/nyirok/css/template.css" rel="stylesheet" type="text/css" />
     <link href="/web/templates/nyirok/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />

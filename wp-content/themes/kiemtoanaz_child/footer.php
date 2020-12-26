@@ -63,7 +63,7 @@
 </footer>
 <!-- //FOOTER -->
 
-<form action="https://aasc.com.vn/" target="_blank" name="popupAnywhereForm"></form>
+<form action="/" target="_blank" name="popupAnywhereForm"></form>
 
 <?php wp_footer(); ?>
 
