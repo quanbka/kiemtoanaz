@@ -64,45 +64,7 @@
     <script src="/web/templates/nyirok/js/script.js" type="text/javascript"></script>
     <script src="/web/plugins/system/t3/base/js/jquery.equalheight.js" type="text/javascript"></script>
     <script src="/web/modules/mod_sj_content_slideshowii/assets/js/jquery.cycle.all.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        jQuery(window).on('load', function() {
-            new JCaption('img.caption');
-        });
-        jQuery(function($) {
-            SqueezeBox.initialize({});
-            initSqueezeBox();
-            $(document).on('subform-row-add', initSqueezeBox);
-
-            function initSqueezeBox(event, container) {
-                SqueezeBox.assign($(container || document).find('a.modal').get(), {
-                    parse: 'rel'
-                });
-            }
-        });
-        window.jModalClose = function() {
-            SqueezeBox.close();
-        };
-        document.onreadystatechange = function() {
-            if (document.readyState == 'interactive' && typeof tinyMCE != 'undefined' && tinyMCE) {
-                if (typeof window.jModalClose_no_tinyMCE === 'undefined') {
-                    window.jModalClose_no_tinyMCE = typeof(jModalClose) == 'function' ? jModalClose : false;
-                    jModalClose = function() {
-                        if (window.jModalClose_no_tinyMCE) window.jModalClose_no_tinyMCE.apply(this, arguments);
-                        tinyMCE.activeEditor.windowManager.close();
-                    };
-                }
-                if (typeof window.SqueezeBoxClose_no_tinyMCE === 'undefined') {
-                    if (typeof(SqueezeBox) == 'undefined') SqueezeBox = {};
-                    window.SqueezeBoxClose_no_tinyMCE = typeof(SqueezeBox.close) == 'function' ? SqueezeBox.close : false;
-                    SqueezeBox.close = function() {
-                        if (window.SqueezeBoxClose_no_tinyMCE) window.SqueezeBoxClose_no_tinyMCE.apply(this, arguments);
-                        tinyMCE.activeEditor.windowManager.close();
-                    };
-                }
-            }
-        };
-
-    </script>
+    
 
 
 
