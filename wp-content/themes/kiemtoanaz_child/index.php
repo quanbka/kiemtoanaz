@@ -20,6 +20,9 @@ get_header();
 		<div class="row">
 
 			<div class="span9">
+				<?php
+				echo do_shortcode('[smartslider3 slider="1"]');
+				?>
 				<!-- SPOTLIGHT -->
 				<div class="t3-spotlight t3-botsl  row-fluid">
 					<div class="span50 spanfirst item-first" data-default="span14 spanfirst" data-mobile="span8">
