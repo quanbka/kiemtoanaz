@@ -28,26 +28,26 @@ get_header();
 					<div class="span50 spanfirst item-first" data-default="span14 spanfirst" data-mobile="span8">
 						<div class="t3-module modulethumb " id="Mod230">
 							<div class="module-inner">
-								<h3 class="module-title "><span>Giới thiệu AASC</span></h3>
+								<h3 class="module-title "><span>Giới thiệu Kiểm toán AZ Việt Nam</span></h3>
 								<div class="module-ct">
 
 									<div class="customthumb">
-										<p>Được thành lập ngày 13/05/1991 theo Quyết định số 164 TC/TCCB của Bộ trưởng Bộ Tài chính, AASC là Công ty Kế toán Kiểm toán được thành lập đầu tiên, giữ vững truyền thống sinh ra và trưởng thành từ Bộ
+										<p>Được thành lập ngày 13/05/1991 theo Quyết định số 164 TC/TCCB của Bộ trưởng Bộ Tài chính, Kiểm toán AZ Việt Nam là Công ty Kế toán Kiểm toán được thành lập đầu tiên, giữ vững truyền thống sinh ra và trưởng thành từ Bộ
 											Tài chính - Việt Nam thực hiện các dịch vụ về Kiểm toán, Tư vấn Tài chính, Kế toán và Thuế.</p>
 										<p style="text-align: center;"><img src="/web/images/2020/Popup/Logo_30_nam.jpg" alt="Logo 30 nam" /></p>
-										<p style="text-align: justify;"><span style="line-height: 1.3em;"></span><a style="text-align: left; line-height: 1.3em;" href="/web/index.php/gioi-thieu/gioi-thieu-ve-aasc">Xem tiếp</a></p>
-										<p><a style="color: #f26422; font-weight: bold; text-decoration: none;" href="/web/index.php/cac-tin-bai-viet-ve-aasc"></a></p>
+										<p style="text-align: justify;"><span style="line-height: 1.3em;"></span><a style="text-align: left; line-height: 1.3em;" href="/web/index.php/gioi-thieu/gioi-thieu-ve-Kiểm toán AZ Việt Nam">Xem tiếp</a></p>
+										<p><a style="color: #f26422; font-weight: bold; text-decoration: none;" href="/web/index.php/cac-tin-bai-viet-ve-Kiểm toán AZ Việt Nam"></a></p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="span50 spanfirst " data-default="span14 spanfirst" data-mobile="span8">
-						<div class="t3-module moduleaascnewsfirst " id="Mod327">
+						<div class="t3-module moduleKiểm toán AZ Việt Namnewsfirst " id="Mod327">
 							<div class="module-inner">
 								<h3 class="module-title "><span>Quy định mới</span></h3>
 								<div class="module-ct">
-									<div id="k2ModuleBox327" class="k2ItemsBlock aascnewsfirst">
+									<div id="k2ModuleBox327" class="k2ItemsBlock Kiểm toán AZ Việt Namnewsfirst">
 
 										<ul>
 											<li class="even">
@@ -145,11 +145,11 @@ get_header();
 								</div>
 							</div>
 						</div>
-						<div class="t3-module moduleaascnews " id="Mod237">
+						<div class="t3-module moduleKiểm toán AZ Việt Namnews " id="Mod237">
 							<div class="module-inner">
 								<h3 class="module-title "><span>Bản tin văn bản pháp luật</span></h3>
 								<div class="module-ct">
-									<div id="k2ModuleBox237" class="k2ItemsBlock aascnews">
+									<div id="k2ModuleBox237" class="k2ItemsBlock Kiểm toán AZ Việt Namnews">
 
 										<ul>
 											<li class="even">
@@ -295,7 +295,7 @@ get_header();
 			<div class="t3-sidebar t3-sidebar-2 span3 t3respon" style="min-height: 588px;">
 				<div class="t3-module module_contact " id="Mod270">
 					<div class="module-inner">
-						<h3 class="module-title "><span>Bài phát biểu về AASC</span></h3>
+						<h3 class="module-title "><span>Bài phát biểu về Kiểm toán AZ Việt Nam</span></h3>
 						<div class="module-ct">
 							<script type="text/javascript">
 								jQuery(function($) {
@@ -329,10 +329,10 @@ get_header();
 
 							<div class="custom_contact">
 								<p style="padding-left: 15px;"><strong>Trụ sở chính</strong><br>Số 01 Lê Phụng Hiểu, Hoàn Kiếm, Hà Nội.<br>Tel: (84.24) 3824 1990 <br>Fax: (84.24) 3825 3973<br>Email: <a
-										href="mailto:aasc@kiemtoanazvietnam.com">aasc@kiemtoanazvietnam.com</a></p>
+										href="mailto:Kiểm toán AZ Việt Nam@kiemtoanazvietnam.com">Kiểm toán AZ Việt Nam@kiemtoanazvietnam.com</a></p>
 								<p style="padding-left: 15px;"><strong>TP. Hồ Chí Minh</strong><br>Lầu 3, tòa nhà Galaxy 9&nbsp;<br>Số 9 Nguyễn Khoái, phường 1, Quận 4<br>Tel: (84.28) 3945 0505 /0606&nbsp;<br>Fax: (84.28) 3945 1106<br>Email: <a
-										href="mailto:aaschcm@kiemtoanazvietnam.com">aaschcm@kiemtoanazvietnam.com</a></p>
-								<p style="padding-left: 15px;"><strong>Quảng Ninh</strong><br>Số 8 Chu Văn An, TP Hạ Long.<br>Tel: (84.2033) 627 571<br>Fax: (84.2033) 627 572<br>Email: <a href="mailto:aascqn@kiemtoanazvietnam.com">aascqn@kiemtoanazvietnam.com</a>
+										href="mailto:Kiểm toán AZ Việt Namhcm@kiemtoanazvietnam.com">Kiểm toán AZ Việt Namhcm@kiemtoanazvietnam.com</a></p>
+								<p style="padding-left: 15px;"><strong>Quảng Ninh</strong><br>Số 8 Chu Văn An, TP Hạ Long.<br>Tel: (84.2033) 627 571<br>Fax: (84.2033) 627 572<br>Email: <a href="mailto:Kiểm toán AZ Việt Namqn@kiemtoanazvietnam.com">Kiểm toán AZ Việt Namqn@kiemtoanazvietnam.com</a>
 								</p>
 							</div>
 						</div>

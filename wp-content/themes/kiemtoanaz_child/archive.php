@@ -18,7 +18,7 @@ get_header();
 		<div class="t3-sidebar t3-sidebar-1 span2 t3respon" style="min-height: 1490px;">
 			<div class="t3-module module no-padding " id="Mod232"><div class="module-inner"><h3 class="module-title "><span>Tin tức</span></h3><div class="module-ct">
 <ul class="nav ">
-<li class="item-464 active">	<a href="/web/index.php/tin-tuc/tin-thoi-su">Tin thời sự</a></li><li class="item-444">	<a href="/web/index.php/tin-tuc/tin-aasc">Tin AASC</a></li><li class="item-207">	<a href="/web/index.php/tin-tuc/thong-cao-bao-chi">Thông cáo báo chí</a></li><li class="item-812">	<a href="/web/index.php/tin-tuc/bao-cao-minh-bach">Báo cáo minh bạch</a></li><li class="item-758">	<a href="/web/index.php/tin-tuc/quy-dinh-moi">Quy định mới</a></li><li class="item-274">	<a href="/web/index.php/tin-tuc/ban-tin-van-ban-noi-bo">Bản tin văn bản pháp luật</a></li><li class="item-776">	<a href="/web/index.php/tin-tuc/van-ban-hop-nhat">Văn bản hợp nhất</a></li></ul>
+<li class="item-464 active">	<a href="/web/index.php/tin-tuc/tin-thoi-su">Tin thời sự</a></li><li class="item-444">	<a href="/web/index.php/tin-tuc/tin-Kiểm toán AZ Việt Nam">Tin Kiểm toán AZ Việt Nam</a></li><li class="item-207">	<a href="/web/index.php/tin-tuc/thong-cao-bao-chi">Thông cáo báo chí</a></li><li class="item-812">	<a href="/web/index.php/tin-tuc/bao-cao-minh-bach">Báo cáo minh bạch</a></li><li class="item-758">	<a href="/web/index.php/tin-tuc/quy-dinh-moi">Quy định mới</a></li><li class="item-274">	<a href="/web/index.php/tin-tuc/ban-tin-van-ban-noi-bo">Bản tin văn bản pháp luật</a></li><li class="item-776">	<a href="/web/index.php/tin-tuc/van-ban-hop-nhat">Văn bản hợp nhất</a></li></ul>
 </div></div></div>
 		</div>
 		<!-- //SIDEBAR 1 -->
@@ -1258,9 +1258,9 @@ get_header();
 			<div class="t3-module module_contact " id="Mod233"><div class="module-inner"><h3 class="module-title "><span>Văn phòng của chúng tôi</span></h3><div class="module-ct">
 
 <div class="custom_contact">
-<p style="padding-left: 15px;"><strong>Trụ sở chính</strong><br>Số 01 Lê Phụng Hiểu, Hoàn Kiếm, Hà Nội.<br>Tel: (84.24) 3824 1990 <br>Fax: (84.24) 3825 3973<br>Email: <a href="mailto:aasc@kiemtoanazvietnam.com">aasc@kiemtoanazvietnam.com</a></p>
-<p style="padding-left: 15px;"><strong>TP. Hồ Chí Minh</strong><br>Lầu 3, tòa nhà Galaxy 9&nbsp;<br>Số 9 Nguyễn Khoái, phường 1, Quận 4<br>Tel: (84.28) 3945 0505 /0606&nbsp;<br>Fax: (84.28) 3945 1106<br>Email: <a href="mailto:aaschcm@kiemtoanazvietnam.com">aaschcm@kiemtoanazvietnam.com</a></p>
-<p style="padding-left: 15px;"><strong>Quảng Ninh</strong><br>Số 8 Chu Văn An, TP Hạ Long.<br>Tel: (84.2033) 627 571<br>Fax: (84.2033) 627 572<br>Email: <a href="mailto:aascqn@kiemtoanazvietnam.com">aascqn@kiemtoanazvietnam.com</a></p></div>
+<p style="padding-left: 15px;"><strong>Trụ sở chính</strong><br>Số 01 Lê Phụng Hiểu, Hoàn Kiếm, Hà Nội.<br>Tel: (84.24) 3824 1990 <br>Fax: (84.24) 3825 3973<br>Email: <a href="mailto:Kiểm toán AZ Việt Nam@kiemtoanazvietnam.com">Kiểm toán AZ Việt Nam@kiemtoanazvietnam.com</a></p>
+<p style="padding-left: 15px;"><strong>TP. Hồ Chí Minh</strong><br>Lầu 3, tòa nhà Galaxy 9&nbsp;<br>Số 9 Nguyễn Khoái, phường 1, Quận 4<br>Tel: (84.28) 3945 0505 /0606&nbsp;<br>Fax: (84.28) 3945 1106<br>Email: <a href="mailto:Kiểm toán AZ Việt Namhcm@kiemtoanazvietnam.com">Kiểm toán AZ Việt Namhcm@kiemtoanazvietnam.com</a></p>
+<p style="padding-left: 15px;"><strong>Quảng Ninh</strong><br>Số 8 Chu Văn An, TP Hạ Long.<br>Tel: (84.2033) 627 571<br>Fax: (84.2033) 627 572<br>Email: <a href="mailto:Kiểm toán AZ Việt Namqn@kiemtoanazvietnam.com">Kiểm toán AZ Việt Namqn@kiemtoanazvietnam.com</a></p></div>
 </div></div></div><div class="t3-module module " id="Mod238"><div class="module-inner"><h3 class="module-title "><span>Tin liên quan</span></h3><div class="module-ct">
 <div id="k2ModuleBox238" class="k2ItemsBlock">
 
