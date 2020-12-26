@@ -329,10 +329,10 @@ get_header();
 
 							<div class="custom_contact">
 								<p style="padding-left: 15px;"><strong>Trụ sở chính</strong><br>Số 01 Lê Phụng Hiểu, Hoàn Kiếm, Hà Nội.<br>Tel: (84.24) 3824 1990 <br>Fax: (84.24) 3825 3973<br>Email: <a
-										href="mailto:aasc@aasc.com.vn">aasc@aasc.com.vn</a></p>
+										href="mailto:aasc@kiemtoanazvietnam.com">aasc@kiemtoanazvietnam.com</a></p>
 								<p style="padding-left: 15px;"><strong>TP. Hồ Chí Minh</strong><br>Lầu 3, tòa nhà Galaxy 9&nbsp;<br>Số 9 Nguyễn Khoái, phường 1, Quận 4<br>Tel: (84.28) 3945 0505 /0606&nbsp;<br>Fax: (84.28) 3945 1106<br>Email: <a
-										href="mailto:aaschcm@aasc.com.vn">aaschcm@aasc.com.vn</a></p>
-								<p style="padding-left: 15px;"><strong>Quảng Ninh</strong><br>Số 8 Chu Văn An, TP Hạ Long.<br>Tel: (84.2033) 627 571<br>Fax: (84.2033) 627 572<br>Email: <a href="mailto:aascqn@aasc.com.vn">aascqn@aasc.com.vn</a>
+										href="mailto:aaschcm@kiemtoanazvietnam.com">aaschcm@kiemtoanazvietnam.com</a></p>
+								<p style="padding-left: 15px;"><strong>Quảng Ninh</strong><br>Số 8 Chu Văn An, TP Hạ Long.<br>Tel: (84.2033) 627 571<br>Fax: (84.2033) 627 572<br>Email: <a href="mailto:aascqn@kiemtoanazvietnam.com">aascqn@kiemtoanazvietnam.com</a>
 								</p>
 							</div>
 						</div>
