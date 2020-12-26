@@ -29,6 +29,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="span9">
+				<?php
+				echo do_shortcode('[smartslider3 slider="2"]');
+				?>
 				<div class="t3-spotlight t3-botsl  row-fluid">
 					<div class="span50 spanfirst item-first" data-default="span14 spanfirst" data-mobile="span8">
 						<div class="t3-module modulethumb " id="Mod230">
@@ -47,9 +50,7 @@
 							</div>
 						</div>
 					</div>
-				<?php
-				echo do_shortcode('[smartslider3 slider="2"]');
-				?>
+
 				<!-- SPOTLIGHT -->
 				<?php
 					$categories = ['quy-dinh-moi', 'ban-tin-van-ban-phap-luat'];
