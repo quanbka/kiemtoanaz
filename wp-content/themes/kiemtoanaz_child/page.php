@@ -111,7 +111,7 @@ get_header();
 										// comments_template();
 									endif;
 									?>
-							
+
 
 
 							</article>
@@ -126,51 +126,7 @@ get_header();
 
 			<!-- SIDEBAR 2 -->
 			<div class="t3-sidebar t3-sidebar-2 span3 t3respon" style="min-height: 981px;">
-				<div class="t3-module module_contact " id="Mod270">
-					<div class="module-inner">
-						<h3 class="module-title "><span>Bài phát biểu về Kiểm toán AZ Việt Nam</span></h3>
-						<div class="module-ct">
-							<script type="text/javascript">
-								jQuery(function($) {
-									$('.sp_simple_youtube_responsive').each(function() {
-										var $that = $(this);
-										$('#sp-simple-youtube270').css({
-											'width': $(this).width(),
-											'height': ($(this).data('height') * $(this).width()) / $(this).data('width')
-										});
-										$(window).resize(function() {
-											$('#sp-simple-youtube270').css({
-												'width': $that.width(),
-												'height': ($that.data('height') * $that.width()) / $that.data('width')
-											});
-										});
-									});
-								});
-							</script>
-
-							<div class="sp_simple_youtube sp_simple_youtube_responsive" data-width="150" data-height="100">
-								<iframe title="Simple youtube module by JoomShaper.com" id="sp-simple-youtube270" src="https://www.youtube.com/embed/huUfQi-7u2g?wmode=transparent" frameborder="0" style="width: 287px; height: 191.333px;"></iframe>
-							</div>
-
-						</div>
-					</div>
-				</div>
-				<div class="t3-module module_contact " id="Mod233">
-					<div class="module-inner">
-						<h3 class="module-title "><span>Văn phòng của chúng tôi</span></h3>
-						<div class="module-ct">
-
-							<div class="custom_contact">
-								<p style="padding-left: 15px;"><strong>Trụ sở chính</strong><br>Số 01 Lê Phụng Hiểu, Hoàn Kiếm, Hà Nội.<br>Tel: (84.24) 3824 1990 <br>Fax: (84.24) 3825 3973<br>Email: <a
-										href="#">Kiểm toán AZ Việt Nam@kiemtoanazvietnam.com</a></p>
-								<p style="padding-left: 15px;"><strong>TP. Hồ Chí Minh</strong><br>Lầu 3, tòa nhà Galaxy 9&nbsp;<br>Số 9 Nguyễn Khoái, phường 1, Quận 4<br>Tel: (84.28) 3945 0505 /0606&nbsp;<br>Fax: (84.28) 3945 1106<br>Email: <a
-										href="#">Kiểm toán AZ Việt Namhcm@kiemtoanazvietnam.com</a></p>
-								<p style="padding-left: 15px;"><strong>Quảng Ninh</strong><br>Số 8 Chu Văn An, TP Hạ Long.<br>Tel: (84.2033) 627 571<br>Fax: (84.2033) 627 572<br>Email: <a
-										href="#">Kiểm toán AZ Việt Namqn@kiemtoanazvietnam.com</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
+				<?php get_sidebar(); ?>
 			</div>
 			<!-- //SIDEBAR 2 -->
 
