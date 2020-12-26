@@ -203,3 +203,66 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 // 	}
 // 	echo $menu_list;
 // }
+
+
+add_action( 'customize_register', 'custom_header_settings' );
+
+function mytheme_customize_css()
+{
+    ?>
+		 <style media="screen">
+	 		:root {
+	 			--primary-color : <?php echo get_theme_mod('primary_color', '#000000'); ?>;
+	 			--secondary-color : <?php echo get_theme_mod('secondary_color', '#000000'); ?>;
+	 			/* --primary-color : #0c468a; */
+	 		}
+	 	</style>
+    <?php
+}
+
+
+add_filter( 'get_the_archive_title', 'my_theme_archive_title' );
+
+function custom_header_settings($wp_customize){
+    $wp_customize->add_section( 'header_settings' , array(
+        'title'      => 'Color picker',
+        'priority'   => 30,
+    ) );
+
+    $wp_customize->add_setting( 'primary_color' , array(
+        'default'     => '#0c468a',
+        'transport'   => 'refresh',
+    ) );
+
+    $wp_customize->add_setting( 'secondary_color' , array(
+        'default'     => '#009cd7',
+        'transport'   => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'primary_color', array(
+        'label'      => 'Primary Color',
+        'section'    => 'header_settings',
+        'settings'   => 'primary_color',
+    ) ) );
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'secondary_color', array(
+        'label'      => 'Secondary Color',
+        'section'    => 'header_settings',
+        'settings'   => 'secondary_color',
+    ) ) );
+}
+
+function my_theme_archive_title( $title ) {
+    if ( is_category() ) {
+        $title = single_cat_title( '', false );
+    } elseif ( is_tag() ) {
+        $title = single_tag_title( '', false );
+    } elseif ( is_author() ) {
+        $title = '<span class="vcard">Tác giả: ' . get_the_author() . '</span>';
+    } elseif ( is_post_type_archive() ) {
+        $title = post_type_archive_title( '', false );
+    } elseif ( is_tax() ) {
+        $title = single_term_title( '', false );
+    }
+
+    return $title;
+}
