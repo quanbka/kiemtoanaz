@@ -85,6 +85,20 @@ get_header();
 								</header>
 
 
+								<!-- Aside -->
+								<aside class="article-aside clearfix">
+
+
+
+									
+
+								</aside>
+								<!-- //Aside -->
+
+
+
+
+
 
 
 
