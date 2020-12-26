@@ -21,7 +21,7 @@ get_header();
 
 			<div class="span9">
 				<?php
-				echo do_shortcode('[smartslider3 slider="1"]');
+				echo do_shortcode('[smartslider3 slider="2"]');
 				?>
 				<!-- SPOTLIGHT -->
 				<div class="t3-spotlight t3-botsl  row-fluid">
