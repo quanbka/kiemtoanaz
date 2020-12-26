@@ -102,8 +102,8 @@ get_header();
 												<!-- Item title -->
 												<h3 class="catItemTitle">
 
-													<a href="/web/index.php/tin-tuc/tin-thoi-su/item/423-m-i-nam-doanh-nghi-p-m-t-872-gi-d-n-p-thu">
-														Mỗi năm Doanh nghiệp mất 872 giờ để… nộp thuế </a>
+													<a href="<?php the_permalink() ?>">
+														<?php the_title() ?> </a>
 
 												</h3>
 
@@ -122,7 +122,7 @@ get_header();
 
 												<!-- Item introtext -->
 												<div class="catItemIntroText">
-													Theo Ngân hàng thế giới, với thời gian 872 giờ doanh nghiệp phải bỏ ra để nộp thuế mỗi năm, Việt Nam đã trở thành nước tốn nhiều thời gian… </div>
+													<?php the_excerpt() ?></div>
 
 												<div class="clr"></div>
 
@@ -144,8 +144,8 @@ get_header();
 
 											<!-- Item "read more..." link -->
 											<div class="catItemReadMore">
-												<a class="k2ReadMore" href="/web/index.php/tin-tuc/tin-thoi-su/item/423-m-i-nam-doanh-nghi-p-m-t-872-gi-d-n-p-thu">
-													Read more... </a>
+												<a class="k2ReadMore" href="<?php the_permalink() ?>">
+													Xem thêm</a>
 											</div>
 
 											<div class="clr"></div>
