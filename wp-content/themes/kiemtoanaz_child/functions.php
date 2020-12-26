@@ -253,7 +253,14 @@ class WPDocs_Walker_Nav_Menu extends Walker_Nav_Menu {
             ( $depth % 2 ? 'menu-item-odd' : 'menu-item-even' ),
             'menu-item-depth-' . $depth
         );
+		$muiten = "";
+		if($args->walker->has_children)
+        {
+            $depth_classes[] = 'dropdown mega';
+			$muiten = '<em class="caret"></em>';
+        }
         $depth_class_names = esc_attr( implode( ' ', $depth_classes ) );
+
 
         // Passed classes.
         $classes = empty( $item->classes ) ? array() : (array) $item->classes;
@@ -274,7 +281,7 @@ class WPDocs_Walker_Nav_Menu extends Walker_Nav_Menu {
             $args->before,
             $attributes,
             $args->link_before,
-            apply_filters( 'the_title', $item->title, $item->ID ),
+            apply_filters( 'the_title', $item->title .  $muiten , $item->ID ),
             $args->link_after,
             $args->after
         );
