@@ -35,13 +35,7 @@ get_header();
 						<h3 class="module-title "><span>Tin tức</span></h3>
 						<div class="module-ct">
 							<ul class="nav ">
-								<li class="item-464 active"> <a href="/web/index.php/tin-tuc/tin-thoi-su"><?php the_archive_title() ?></a></li>
-								<li class="item-444"> <a href="/web/index.php/tin-tuc/tin-Kiểm toán AZ Việt Nam">Tin Kiểm toán AZ Việt Nam</a></li>
-								<li class="item-207"> <a href="/web/index.php/tin-tuc/thong-cao-bao-chi">Thông cáo báo chí</a></li>
-								<li class="item-812"> <a href="/web/index.php/tin-tuc/bao-cao-minh-bach">Báo cáo minh bạch</a></li>
-								<li class="item-758"> <a href="/web/index.php/tin-tuc/quy-dinh-moi">Quy định mới</a></li>
-								<li class="item-274"> <a href="/web/index.php/tin-tuc/ban-tin-van-ban-noi-bo">Bản tin văn bản pháp luật</a></li>
-								<li class="item-776"> <a href="/web/index.php/tin-tuc/van-ban-hop-nhat">Văn bản hợp nhất</a></li>
+								<li class="item-464 active"> <a href="#"><?php the_archive_title() ?></a></li>
 							</ul>
 						</div>
 					</div>
