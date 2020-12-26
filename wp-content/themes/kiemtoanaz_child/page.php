@@ -26,7 +26,7 @@ get_header();
 						<h3 class="module-title "><span>Giới thiệu</span></h3>
 						<div class="module-ct">
 							<ul class="nav _mnKiểm toán AZ Việt Nam">
-								<li class="item-480 active"> <a class="fb" href="#">Giới thiệu Kiểm toán AZ Việt Nam</a></li>
+								<li class="item-480 active"> <a class="fb" href="#"><?php echo($post->post_title); ?></a></li>
 								<li class="item-481"> <a class="tweet" href="#">Thương hiệu Kiểm toán AZ Việt Nam</a></li>
 								<li class="item-484 parent"> <a href="#">Ban điều hành</a></li>
 								<li class="item-483"> <a class="vimeo" href="#">Đội ngũ chuyên gia</a></li>
@@ -77,8 +77,9 @@ get_header();
 
 								<header class="article-header clearfix">
 									<h1 class="article-title" itemprop="name">
-										<a href="#" itemprop="url" title="Giới thiệu Kiểm toán AZ Việt Nam">
-											Giới thiệu Kiểm toán AZ Việt Nam</a>
+										<a href="#" itemprop="url" title="<?php echo($post->post_title); ?>">
+											<?php echo($post->post_title); ?>
+										</a>
 									</h1>
 
 								</header>
