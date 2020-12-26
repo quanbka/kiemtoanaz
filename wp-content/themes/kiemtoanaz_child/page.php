@@ -85,29 +85,6 @@ get_header();
 								</header>
 
 
-								<!-- Aside -->
-								<aside class="article-aside clearfix">
-
-
-
-									<div class="btn-group pull-right">
-										<a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> <span class="icon-cog"></span> <span class="caret"></span> </a>
-										<ul class="dropdown-menu">
-											<li class="print-icon"> <a href="#" title="In bài này"
-													onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow">In
-													bài này</a> </li>
-											<li class="email-icon"> <a href="#" title="Gửi Email bài này"
-													onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;">Gửi Email bài này</a> </li>
-										</ul>
-									</div>
-
-								</aside>
-								<!-- //Aside -->
-
-
-
-
-
 
 
 
