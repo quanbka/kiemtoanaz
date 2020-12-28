@@ -97,9 +97,15 @@
 
                 <!-- LOGO -->
                 <div class="span3 logo-image">
+							<?php
+							$custom_logo_id = get_theme_mod( 'custom_logo' );
+							$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+
+							 ?>
                     <h1>
-                        <a href="/" title="Hãng kiểm toán hàng đầu Việt Nam" style="background-image:url(/web/images/logo.png)">
+                        <a href="/" title="Hãng kiểm toán hàng đầu Việt Nam" style="background-image:url(<?php echo $image[0]; ?> ); background-size: contain;">
                             <span>Hãng kiểm toán hàng đầu Việt Nam</span>
+
                         </a>
                         <small class="site-slogan hidden-phone">Hãng kiểm toán hàng đầu Việt Nam</small>
                     </h1>
