@@ -25,7 +25,7 @@
 		</div>
 	</div>
 </nav>
-<section id="t3-mainbody" class="t3-mainbody main-left wrap">
+<footer id="t3-footer" class=" t3-footer t3-mainbody main-left wrap">
 	<div class="container">
 		<div class="row">
 			<div class="span9">
@@ -64,7 +64,7 @@
 				?>
 
 					<div class="span50 spanfirst " data-default="span14 spanfirst" data-mobile="span8">
-						<div class="t3-module moduleKiểm toán AZ Việt Namnewsfirst " id="Mod327">
+						<div class="t3-module moduleaascnewsfirst " id="Mod327">
 							<div class="module-inner">
 								<h3 class="module-title "><span><?php echo $category->name ?></span></h3>
 								<div class="module-ct">
@@ -109,5 +109,5 @@
 			<!-- //SIDEBAR 2 -->
 		</div>
 	</div>
-</section><?php
+</footer><?php
 get_footer();
