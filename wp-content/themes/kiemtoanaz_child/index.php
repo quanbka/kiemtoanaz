@@ -36,7 +36,7 @@
 					<div class="span50 spanfirst item-first" data-default="span14 spanfirst" data-mobile="span8">
 						<div class="t3-module modulethumb " id="Mod230">
 							<div class="module-inner">
-								<h3 class="module-title "><span>Giới thiệu Kiểm toán AZ Việt Nam</span></h3>
+								<!-- <h3 class="module-title "><span>Giới thiệu Kiểm toán AZ Việt Nam</span></h3>
 								<div class="module-ct">
 									<div class="customthumb">
 										<p>Được thành lập ngày 13/05/1991 theo Quyết định số 164 TC/TCCB của Bộ trưởng Bộ Tài chính, Kiểm toán AZ Việt Nam là Công ty Kế toán Kiểm toán được thành lập đầu tiên, giữ vững truyền thống sinh ra và trưởng
@@ -46,12 +46,15 @@
 										<p style="text-align: justify;"><span style="line-height: 1.3em;"></span><a style="text-align: left; line-height: 1.3em;" href="/web/index.php/gioi-thieu/gioi-thieu-ve-Kiểm toán AZ Việt Nam">Xem tiếp</a></p>
 										<p><a style="color: #f26422; font-weight: bold; text-decoration: none;" href="/web/index.php/cac-tin-bai-viet-ve-Kiểm toán AZ Việt Nam"></a></p>
 									</div>
-								</div>
+								</div> -->
+								<?php dynamic_sidebar('home'); ?>
 							</div>
+
 						</div>
 					</div>
 
 				<!-- SPOTLIGHT -->
+				<div class="span50 spanfirst " data-default="span14 spanfirst" data-mobile="span8">
 				<?php
 					$categories = ['quy-dinh-moi', 'ban-tin-van-ban-phap-luat'];
 
@@ -63,7 +66,7 @@
 
 				?>
 
-					<div class="span50 spanfirst " data-default="span14 spanfirst" data-mobile="span8">
+
 						<div class="t3-module moduleaascnewsfirst " id="Mod327">
 							<div class="module-inner">
 								<h3 class="module-title "><span><?php echo $category->name ?></span></h3>
@@ -95,11 +98,12 @@
 								</div>
 							</div>
 						</div>
-					</div>
+
 
 				<?php
 					}
 				?>
+				</div>
 				</div>
 				<!-- SPOTLIGHT -->
 			</div> <!-- SIDEBAR 2 -->

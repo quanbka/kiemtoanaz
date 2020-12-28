@@ -266,3 +266,18 @@ function my_theme_archive_title( $title ) {
 
     return $title;
 }
+
+function tuvibattu_widgets_init() {
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Home', 'tuvibattu' ),
+			'id'            => 'home',
+			'description'   => esc_html__( 'Add widgets here.', 'tuvibattu' ),
+			'before_widget' => '<div class="module-ct">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="module-title ">',
+			'after_title'   => '</h3>',
+		)
+	);
+}
+add_action( 'widgets_init', 'tuvibattu_widgets_init' );
