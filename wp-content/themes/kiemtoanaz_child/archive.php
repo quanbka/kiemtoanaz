@@ -35,7 +35,7 @@ get_header();
 						<h3 class="module-title "><span>Danh mục</span></h3>
 						<div class="module-ct">
 							<ul class="nav ">
-								<li class="item-464 active"> <a href="."><?php the_archive_title() ?></a></li>
+								<li class="item-464 active"> <?php the_archive_title() ?></li>
 								<?php
 								$category = get_queried_object();
 								$categories= get_term_children($category->term_id, 'category');
