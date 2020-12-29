@@ -23,18 +23,12 @@
 				<div class="t3-spotlight t3-botsl  row-fluid">
 					<div class="span50 spanfirst item-first" data-default="span14 spanfirst" data-mobile="span8">
 						<div class="t3-module modulethumb " id="Mod230">
+							<style media="screen">
+								#Mod230 .textwidget {
+									padding: 0 10px 15px;
+								}
+							</style>
 							<div class="module-inner">
-								<!-- <h3 class="module-title "><span>Giới thiệu Kiểm toán AZ Việt Nam</span></h3>
-								<div class="module-ct">
-									<div class="customthumb">
-										<p>Được thành lập ngày 13/05/1991 theo Quyết định số 164 TC/TCCB của Bộ trưởng Bộ Tài chính, Kiểm toán AZ Việt Nam là Công ty Kế toán Kiểm toán được thành lập đầu tiên, giữ vững truyền thống sinh ra và trưởng
-											thành từ Bộ
-											Tài chính - Việt Nam thực hiện các dịch vụ về Kiểm toán, Tư vấn Tài chính, Kế toán và Thuế.</p>
-										<p style="text-align: center;"><img src="/web/images/2020/Popup/Logo_30_nam.jpg" alt="Logo 30 nam" /></p>
-										<p style="text-align: justify;"><span style="line-height: 1.3em;"></span><a style="text-align: left; line-height: 1.3em;" href="/web/index.php/gioi-thieu/gioi-thieu-ve-Kiểm toán AZ Việt Nam">Xem tiếp</a></p>
-										<p><a style="color: #f26422; font-weight: bold; text-decoration: none;" href="/web/index.php/cac-tin-bai-viet-ve-Kiểm toán AZ Việt Nam"></a></p>
-									</div>
-								</div> -->
 								<?php dynamic_sidebar('home'); ?>
 							</div>
 
@@ -59,7 +53,7 @@
 							<div class="module-inner">
 								<h3 class="module-title "><span><?php echo $category->name ?></span></h3>
 								<div class="module-ct">
-									<div id="k2ModuleBox327" class="k2ItemsBlock Kiểm toán AZ Việt Namnewsfirst">
+									<div id="k2ModuleBox327" class="k2ItemsBlock moduleaascnewsfirst">
 										<ul>
 											<?php foreach ($posts as $key => $post): ?>
 												<li class="even">

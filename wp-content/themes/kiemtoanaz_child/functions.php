@@ -273,8 +273,6 @@ function tuvibattu_widgets_init() {
 			'name'          => esc_html__( 'Home', 'tuvibattu' ),
 			'id'            => 'home',
 			'description'   => esc_html__( 'Add widgets here.', 'tuvibattu' ),
-			'before_widget' => '<div class="module-ct">',
-			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="module-title ">',
 			'after_title'   => '</h3>',
 		)
