@@ -41,7 +41,7 @@ get_header();
 								$categories= get_term_children($category->term_id, 'category');
 								$temp = get_terms(
 								   'category',
-								   array('parent' => 0)
+								   array('parent' => 0, 'exclude' => $category->term_id)
 							   	);
 								foreach ($temp as $key => $value) {
 									$categories[] = $value->term_id;
