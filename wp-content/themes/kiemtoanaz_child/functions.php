@@ -161,6 +161,18 @@ function kiemtoanaz_widgets_init() {
 			'after_title'   => '</h3>',
 		)
 	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer1', 'kiemtoanaz' ),
+			'id'            => 'footer-1',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer2', 'kiemtoanaz' ),
+			'id'            => 'footer-2',
+		)
+	);
 
 }
 add_action( 'widgets_init', 'kiemtoanaz_widgets_init' );
