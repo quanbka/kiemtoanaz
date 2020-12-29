@@ -113,5 +113,6 @@
 			<!-- //SIDEBAR 2 -->
 		</div>
 	</div>
-</footer><?php
+</footer>
+<?php
 get_footer();
