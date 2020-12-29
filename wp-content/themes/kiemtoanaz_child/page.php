@@ -1,11 +1,6 @@
 <?php
 /**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
+ * The template for displaying archive pages
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -14,7 +9,6 @@
 
 get_header();
 ?>
-
 <nav class="wrap t3-navhelper">
 	<div class="container">
 		<div class="row">
@@ -35,34 +29,14 @@ get_header();
 		<div class="row">
 
 			<!-- SIDEBAR 1 -->
-			<div class="t3-sidebar t3-sidebar-1 span2 t3respon" style="min-height: 981px;">
-				<div class="t3-module module no-padding " id="Mod227">
+			<div class="t3-sidebar t3-sidebar-1 span2 t3respon" style="min-height: 1490px;">
+				<div class="t3-module module no-padding " id="Mod232">
 					<div class="module-inner">
-						<h3 class="module-title "><span>Giới thiệu</span></h3>
+						<h3 class="module-title "><span>Tin tức</span></h3>
 						<div class="module-ct">
-							<ul class="nav _mnKiểm toán AZ Việt Nam">
-								<li class="item-480 active"> <a class="fb" href="#"><?php echo($post->post_title); ?></a></li>
-								<li class="item-481"> <a class="tweet" href="#">Thương hiệu Kiểm toán AZ Việt Nam</a></li>
-								<li class="item-484 parent"> <a href="#">Ban điều hành</a></li>
-								<li class="item-483"> <a class="vimeo" href="#">Đội ngũ chuyên gia</a></li>
-								<li class="item-482"> <a class="rss" href="#">Thành tựu</a></li>
-								<li class="item-547"> <a href="#">Văn hóa Kiểm toán AZ Việt Nam</a></li>
-								<li class="item-939"> <a href="#">Bản tin Khát vọng Xanh</a></li>
-								<li class="item-527"> <a href="#">Trách nhiệm xã hội</a></li>
-								<li class="item-813"> <a href="#">Bài viết về Kiểm toán AZ Việt Nam</a></li>
-								<li class="item-994"><a href="#" target="_blank">Cổng thông tin Kiểm toán AZ Việt Nam</a></li>
+							<ul class="nav ">
+								<li class="item-464 active"> <a href="#"><?php the_archive_title() ?></a></li>
 							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="t3-module module_contact " id="Mod264">
-					<div class="module-inner">
-						<h3 class="module-title "><span>Kiểm toán AZ Việt Nam Profile</span></h3>
-						<div class="module-ct">
-
-							<div class="custom_contact">
-								<p><a href="#" target="_blank" rel="noopener noreferrer"><img src="/web/images/Profile.jpg" alt="Kiểm toán AZ Việt Nam Profile" width="400" height="283" style="vertical-align: top;"></a></p>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -70,7 +44,7 @@ get_header();
 			<!-- //SIDEBAR 1 -->
 
 			<!-- MAIN CONTENT -->
-			<div id="t3-content" class="t3-content span7" style="min-height: 981px;">
+			<div id="t3-content" class="t3-content span7" style="min-height: 1490px;">
 				<div class="main-content">
 
 					<div id="system-message-container">
@@ -79,68 +53,152 @@ get_header();
 
 					<div class="t3-component">
 
-						<!-- Page header -->
-
-
-						<div class="item-page clearfix">
-
-
-							<!-- Article -->
-							<article itemscope="" itemtype="http://schema.org/Article">
-								<meta itemprop="inLanguage" content="vi-VN">
-
-
-								<header class="article-header clearfix">
-									<h1 class="article-title" itemprop="name">
-										<a href="#" itemprop="url" title="<?php echo($post->post_title); ?>">
-											<?php echo($post->post_title); ?>
-										</a>
-									</h1>
-
-								</header>
-
-
-								<!-- Aside -->
-								<aside class="article-aside clearfix">
-									<?php the_content() ?>
-								</aside>
-								<!-- //Aside -->
+						<!-- Start K2 Category Layout -->
+						<div id="k2Container" class="itemListView">
 
 
 
+							<!-- Blocks for current category and subcategories -->
+							<div class="itemListCategoriesBlock">
+
+								<!-- Category block -->
+								<div class="itemListCategory">
 
 
 
+									<!-- Category title -->
+									<h2><?php the_archive_title() ?></h2>
 
 
-								<section class="article-content clearfix" itemprop="articleBody">
+									<!-- K2 Plugins: K2CategoryDisplay -->
 
-								</section>
+									<div class="clr"></div>
+								</div>
 
-								<!-- footer -->
-								<!-- //footer -->
 
-								<hr class="divider-vertical">
-								<?php
-									if ( comments_open() || get_comments_number() ) :
-										// comments_template();
-									endif;
+							</div>
+
+
+
+							<!-- Item list -->
+							<div class="itemList">
+
+								<!-- Leading items -->
+								<div id="itemListLeading">
+
+									<?php
+									/* Start the Loop */
+									while ( have_posts() ) :
+										the_post();
+
+										/*
+										 * Include the Post-Type-specific template for the content.
+										 * If you want to override this in a child theme, then include a file
+										 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+										 */
+										?>
+									<div class="itemContainer itemContainerLast" style="width:100.0%;">
+
+										<!-- Start K2 Item Layout -->
+										<div class="catItemView groupLeading">
+											<!-- Plugins: BeforeDisplay -->
+
+											<!-- K2 Plugins: K2BeforeDisplay -->
+
+											<div class="catItemHeader">
+
+												<!-- Item title -->
+												<h3 class="catItemTitle">
+
+													<a href="<?php the_permalink() ?>">
+														<?php the_title() ?> </a>
+
+												</h3>
+
+											</div>
+
+											<!-- Plugins: AfterDisplayTitle -->
+
+											<!-- K2 Plugins: K2AfterDisplayTitle -->
+
+
+											<div class="catItemBody">
+												<!-- Plugins: BeforeDisplayContent -->
+
+												<!-- K2 Plugins: K2BeforeDisplayContent -->
+
+
+												<!-- Item introtext -->
+												<div class="catItemIntroText">
+													<?php the_excerpt() ?></div>
+
+												<div class="clr"></div>
+
+
+												<!-- Plugins: AfterDisplayContent -->
+
+												<!-- K2 Plugins: K2AfterDisplayContent -->
+
+												<div class="clr"></div>
+											</div>
+
+
+											<div class="clr"></div>
+
+
+
+											<div class="clr"></div>
+
+
+											<!-- Item "read more..." link -->
+											<div class="catItemReadMore">
+												<a class="k2ReadMore" href="<?php the_permalink() ?>">
+													Xem thêm</a>
+											</div>
+
+											<div class="clr"></div>
+
+
+											<!-- Plugins: AfterDisplay -->
+
+											<!-- K2 Plugins: K2AfterDisplay -->
+
+											<div class="clr"></div>
+										</div>
+										<!-- End K2 Item Layout -->
+									</div>
+									<div class="clr"></div>
+									<?php
+
+									endwhile;
+
+
 									?>
 
 
 
-							</article>
-							<!-- //Article -->
+									<?php the_posts_navigation(); ?>
+								</div>
 
 
+
+
+							</div>
+
+							<!-- Pagination -->
 						</div>
+						<!-- End K2 Category Layout -->
+
+						<!-- JoomlaWorks "K2" (v2.10.3) | Learn more about K2 at https://getk2.org -->
+
+
 					</div>
 				</div>
 			</div>
 			<!-- //MAIN CONTENT -->
 
 			<!-- SIDEBAR 2 -->
-			<div class="t3-sidebar t3-sidebar-2 span3 t3respon" style="min-height: 981px;">
+			<div class="t3-sidebar t3-sidebar-2 span3 t3respon" style="min-height: 1490px;">
 				<?php get_sidebar(); ?>
 			</div>
 			<!-- //SIDEBAR 2 -->

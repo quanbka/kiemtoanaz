@@ -33,42 +33,9 @@ get_header();
 	<div class="container">
 		<div class="row">
 
-			<!-- SIDEBAR 1 -->
-			<div class="t3-sidebar t3-sidebar-1 span2 t3respon" style="min-height: 981px;">
-				<div class="t3-module module no-padding " id="Mod227">
-					<div class="module-inner">
-						<h3 class="module-title "><span>Giới thiệu</span></h3>
-						<div class="module-ct">
-							<ul class="nav _mnKiểm toán AZ Việt Nam">
-								<li class="item-480 active"> <a class="fb" href="#"><?php echo($post->post_title); ?></a></li>
-								<li class="item-481"> <a class="tweet" href="#">Thương hiệu Kiểm toán AZ Việt Nam</a></li>
-								<li class="item-484 parent"> <a href="#">Ban điều hành</a></li>
-								<li class="item-483"> <a class="vimeo" href="#">Đội ngũ chuyên gia</a></li>
-								<li class="item-482"> <a class="rss" href="#">Thành tựu</a></li>
-								<li class="item-547"> <a href="#">Văn hóa Kiểm toán AZ Việt Nam</a></li>
-								<li class="item-939"> <a href="#">Bản tin Khát vọng Xanh</a></li>
-								<li class="item-527"> <a href="#">Trách nhiệm xã hội</a></li>
-								<li class="item-813"> <a href="#">Bài viết về Kiểm toán AZ Việt Nam</a></li>
-								<li class="item-994"><a href="#" target="_blank">Cổng thông tin Kiểm toán AZ Việt Nam</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="t3-module module_contact " id="Mod264">
-					<div class="module-inner">
-						<h3 class="module-title "><span>Kiểm toán AZ Việt Nam Profile</span></h3>
-						<div class="module-ct">
-
-							<div class="custom_contact">
-								<p><a href="#" target="_blank" rel="noopener noreferrer"><img src="/web/images/Profile.jpg" alt="Kiểm toán AZ Việt Nam Profile" width="400" height="283" style="vertical-align: top;"></a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- //SIDEBAR 1 -->
 
 			<!-- MAIN CONTENT -->
+			<br>
 			<div id="t3-content" class="t3-content span7" style="min-height: 981px;">
 				<div class="main-content">
 
