@@ -163,7 +163,22 @@
 
                                 <div class="nav-collapse collapse always-show">
                                     <div class="t3-megamenu animate slide" data-duration="400" data-responsive="true">
-                                        <ul itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="nav navbar-nav level0">
+										<?php
+											// $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+
+											// print_r(wp_get_nav_menu_items('menu-1')); die;
+											wp_nav_menu(
+												array(
+													'theme_location' => 'menu-1',
+													'menu_id'        => 'primary-menu',
+													'container' => 'ul',
+													'menu_class' => 'nav navbar-nav level0',
+													'walker' => new MenuWalker(),
+
+												)
+											);
+											?>
+                                        <!-- <ul itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="nav navbar-nav level0">
                                             <li itemprop='name' class="active" data-id="690" data-level="1">
                                                 <a itemprop='url' class="" href="/web/index.php" data-target="#">Trang chủ</a>
 
@@ -602,7 +617,7 @@
                                                 <a itemprop='url' class="" href="/web/index.php/lien-he" data-target="#">Liên hệ </a>
 
                                             </li>
-                                        </ul>
+                                        </ul> -->
                                     </div>
                                 </div>
                             </div>
