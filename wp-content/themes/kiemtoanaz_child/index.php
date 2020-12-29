@@ -29,7 +29,7 @@
 								}
 							</style>
 							<div class="module-inner">
-								<?php dynamic_sidebar('home'); ?>
+								<?php dynamic_sidebar('home-content'); ?>
 							</div>
 
 						</div>

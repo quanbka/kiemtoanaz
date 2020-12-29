@@ -124,16 +124,44 @@ add_action( 'after_setup_theme', 'kiemtoanaz_content_width', 0 );
 function kiemtoanaz_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'kiemtoanaz' ),
+			'name'          => esc_html__( 'Home Content', 'tuvibattu' ),
+			'id'            => 'home-content',
+			'description'   => esc_html__( 'Add widgets here.', 'tuvibattu' ),
+			'before_title'  => '<h3 class="module-title ">',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Post', 'kiemtoanaz' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'kiemtoanaz' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h3 class="module-title ">',
 			'after_title'   => '</h3>',
 		)
 	);
-	
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Archive', 'kiemtoanaz' ),
+			'id'            => 'sidebar-archive',
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h3 class="module-title ">',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Home', 'kiemtoanaz' ),
+			'id'            => 'sidebar-home',
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h3 class="module-title ">',
+			'after_title'   => '</h3>',
+		)
+	);
+
 }
 add_action( 'widgets_init', 'kiemtoanaz_widgets_init' );
 
@@ -268,18 +296,6 @@ function my_theme_archive_title( $title ) {
     return $title;
 }
 
-function tuvibattu_widgets_init() {
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Home', 'tuvibattu' ),
-			'id'            => 'home',
-			'description'   => esc_html__( 'Add widgets here.', 'tuvibattu' ),
-			'before_title'  => '<h3 class="module-title ">',
-			'after_title'   => '</h3>',
-		)
-	);
-}
-add_action( 'widgets_init', 'tuvibattu_widgets_init' );
 
 
 class MenuWalker extends Walker_Nav_Menu {
