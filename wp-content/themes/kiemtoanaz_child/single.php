@@ -96,7 +96,15 @@ get_header();
 									<?php the_content() ?>
 								</div>
 								<!-- //Aside -->
+								<ul class="pager pagenav">
+									<li class="previous">
+										<?php echo previous_post_link() ?>
+									</li>
 
+									<li class="next">
+										<?php echo next_post_link() ?>
+									</li>
+								</ul>
 
 
 
