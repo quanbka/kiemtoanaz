@@ -92,9 +92,9 @@ get_header();
 
 
 								<!-- Aside -->
-								<aside class="article-aside clearfix">
+								<div class="article-aside clearfix">
 									<?php the_content() ?>
-								</aside>
+								</div>
 								<!-- //Aside -->
 
 
