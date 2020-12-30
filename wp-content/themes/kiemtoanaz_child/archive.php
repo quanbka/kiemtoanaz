@@ -82,6 +82,7 @@ get_header();
 
 									<!-- Category title -->
 									<h2><?php the_archive_title() ?></h2>
+									<div><?php the_archive_description() ?></div>
 
 
 									<!-- K2 Plugins: K2CategoryDisplay -->
