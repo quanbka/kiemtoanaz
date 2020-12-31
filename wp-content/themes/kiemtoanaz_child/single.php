@@ -41,7 +41,6 @@ get_header();
 								<?php if($category->category_parent) : ?>
 									<li> <a href="<?php echo get_category_link($category->category_parent) ?>"><?php echo get_cat_name($category->category_parent) ?></a></li>
 								<?php endif; ?>
-								<li class="item-464 active"> <a href="#"><?php the_archive_title() ?></a></li>
 
 								<?php
 									$categories = [];
