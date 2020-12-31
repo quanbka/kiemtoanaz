@@ -32,20 +32,60 @@ get_header();
 			<div class="t3-sidebar t3-sidebar-1 span2 t3respon" style="min-height: 1490px;">
 				<div class="t3-module module no-padding " id="Mod232">
 					<div class="module-inner">
-						<h3 class="module-title "><span>Danh mục</span></h3>
+						<h3 class="module-title "><span>Chuyên mục</span></h3>
 						<div class="module-ct">
 							<ul class="nav ">
-								<li class="item-464 active"> <a href="#"><?php the_archive_title() ?></a></li>
 								<?php
-								$category = get_queried_object();
-								$categories= get_term_children($category->term_id, 'category');
-								$temp = get_terms(
-								   'category',
-								   array('parent' => 0, 'exclude' => $category->term_id)
-							   	);
-								foreach ($temp as $key => $value) {
-									$categories[] = $value->term_id;
-								}
+									$category = get_queried_object();
+								?>
+								<?php if($category->category_parent) : ?>
+									<li> <a href="<?php echo get_category_link($category->category_parent) ?>"><?php echo get_cat_name($category->category_parent) ?></a></li>
+								<?php endif; ?>
+								<li class="item-464 active"> <a href="#"><?php the_archive_title() ?></a></li>
+
+								<?php
+									$categories = [];
+									$temp = get_terms(
+									   'category',
+									   array('parent' => $category->term_id, 'hide_empty' => 0, 'exclude' => [1])
+									);
+									// print_r($temp); die;
+									foreach ($temp as $key => $value) {
+										$categories[] = $value->term_id;
+									}
+									$temp = get_terms(
+									   'category',
+									   array('parent' => $category->category_parent, 'hide_empty' => 0, 'exclude' => [1, $category->term_id])
+									);
+									foreach ($temp as $key => $value) {
+										$categories[] = $value->term_id;
+									}
+
+								?>
+								<?php foreach ($categories as $key => $category): ?>
+										<li> <a href="<?php echo get_category_link($category) ?>"><?php echo get_cat_name($category) ?></a></li>
+								<?php endforeach; ?>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="t3-module module no-padding " id="Mod232">
+					<div class="module-inner">
+						<h3 class="module-title "><span>Chuyên mục</span></h3>
+						<div class="module-ct">
+							<ul class="nav ">
+
+
+								<?php
+									$categories = [];
+									$temp = get_terms(
+									   'category',
+									   array('parent' => 0, 'hide_empty' => 0, 'exclude' => [1])
+									);
+									// print_r($temp); die;
+									foreach ($temp as $key => $value) {
+										$categories[] = $value->term_id;
+									}
 								?>
 								<?php foreach ($categories as $key => $category): ?>
 										<li> <a href="<?php echo get_category_link($category) ?>"><?php echo get_cat_name($category) ?></a></li>
