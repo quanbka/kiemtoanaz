@@ -1,11 +1,6 @@
 <?php
 /**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
+ * The template for displaying archive pages
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -33,23 +28,64 @@ get_header();
 	<div class="container">
 		<div class="row">
 
+			<!-- SIDEBAR 1 -->
 			<div class="t3-sidebar t3-sidebar-1 span2 t3respon" style="min-height: 1490px;">
 				<div class="t3-module module no-padding " id="Mod232">
 					<div class="module-inner">
-						<h3 class="module-title "><span>Danh mục</span></h3>
+						<h3 class="module-title "><span>Chuyên mục</span></h3>
 						<div class="module-ct">
 							<ul class="nav ">
-								<li class="item-464 active"> <a href="#"><?php the_archive_title() ?></a></li>
 								<?php
-								$category = get_queried_object();
-								$categories= get_term_children($category->term_id, 'category');
-								$temp = get_terms(
-								   'category',
-								   array('parent' => 0, 'exclude' => $category->term_id)
-							   	);
-								foreach ($temp as $key => $value) {
-									$categories[] = $value->term_id;
-								}
+									$category = get_queried_object();
+								?>
+								<?php if($category->category_parent) : ?>
+									<li> <a href="<?php echo get_category_link($category->category_parent) ?>"><?php echo get_cat_name($category->category_parent) ?></a></li>
+								<?php endif; ?>
+								<li class="item-464 active"> <a href="#"><?php the_archive_title() ?></a></li>
+
+								<?php
+									$categories = [];
+									$temp = get_terms(
+									   'category',
+									   array('parent' => $category->term_id, 'hide_empty' => 0, 'exclude' => [1])
+									);
+									// print_r($temp); die;
+									foreach ($temp as $key => $value) {
+										$categories[] = $value->term_id;
+									}
+									$temp = get_terms(
+									   'category',
+									   array('parent' => $category->category_parent, 'hide_empty' => 0, 'exclude' => [1, $category->term_id])
+									);
+									foreach ($temp as $key => $value) {
+										$categories[] = $value->term_id;
+									}
+
+								?>
+								<?php foreach ($categories as $key => $category): ?>
+										<li> <a href="<?php echo get_category_link($category) ?>"><?php echo get_cat_name($category) ?></a></li>
+								<?php endforeach; ?>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="t3-module module no-padding " id="Mod232">
+					<div class="module-inner">
+						<h3 class="module-title "><span>Chuyên mục</span></h3>
+						<div class="module-ct">
+							<ul class="nav ">
+
+
+								<?php
+									$categories = [];
+									$temp = get_terms(
+									   'category',
+									   array('parent' => 0, 'hide_empty' => 0, 'exclude' => [1])
+									);
+									// print_r($temp); die;
+									foreach ($temp as $key => $value) {
+										$categories[] = $value->term_id;
+									}
 								?>
 								<?php foreach ($categories as $key => $category): ?>
 										<li> <a href="<?php echo get_category_link($category) ?>"><?php echo get_cat_name($category) ?></a></li>
@@ -59,9 +95,10 @@ get_header();
 					</div>
 				</div>
 			</div>
+			<!-- //SIDEBAR 1 -->
 
 			<!-- MAIN CONTENT -->
-			<div id="t3-content" class="t3-content span7" style="min-height: 981px;">
+			<div id="t3-content" class="t3-content span7" style="min-height: 1490px;">
 				<div class="main-content">
 
 					<div id="system-message-container">
@@ -70,76 +107,153 @@ get_header();
 
 					<div class="t3-component">
 
-						<!-- Page header -->
+						<!-- Start K2 Category Layout -->
+						<div id="k2Container" class="itemListView">
 
 
-						<div class="item-page clearfix">
+
+							<!-- Blocks for current category and subcategories -->
+							<div class="itemListCategoriesBlock">
+
+								<!-- Category block -->
+								<div class="itemListCategory">
 
 
-							<!-- Article -->
-							<article itemscope="" itemtype="http://schema.org/Article">
-								<meta itemprop="inLanguage" content="vi-VN">
+
+									<!-- Category title -->
+									<h2><?php the_archive_title() ?></h2>
+									<div><?php the_archive_description() ?></div>
 
 
-								<header class="article-header clearfix">
-									<h1 class="article-title" itemprop="name">
-										<a href="#" itemprop="url" title="<?php echo($post->post_title); ?>">
-											<?php echo($post->post_title); ?>
-										</a>
-									</h1>
+									<!-- K2 Plugins: K2CategoryDisplay -->
 
-								</header>
-
-
-								<!-- Aside -->
-								<div class="article-aside clearfix">
-									<?php the_content() ?>
+									<div class="clr"></div>
 								</div>
-								<!-- //Aside -->
-								<ul class="pager pagenav">
-									<li class="previous">
-										<?php echo previous_post_link() ?>
-									</li>
 
-									<li class="next">
-										<?php echo next_post_link() ?>
-									</li>
-								</ul>
+
+							</div>
 
 
 
+							<!-- Item list -->
+							<div class="itemList">
+
+								<!-- Leading items -->
+								<div id="itemListLeading">
+
+									<?php
+									/* Start the Loop */
+									while ( have_posts() ) :
+										the_post();
+
+										/*
+										 * Include the Post-Type-specific template for the content.
+										 * If you want to override this in a child theme, then include a file
+										 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+										 */
+										?>
+									<div class="itemContainer itemContainerLast" style="width:100.0%;">
+
+										<!-- Start K2 Item Layout -->
+										<div class="catItemView groupLeading">
+											<!-- Plugins: BeforeDisplay -->
+
+											<!-- K2 Plugins: K2BeforeDisplay -->
+
+											<div class="catItemHeader">
+
+												<!-- Item title -->
+												<h3 class="catItemTitle">
+
+													<a href="<?php the_permalink() ?>">
+														<?php the_title() ?> </a>
+
+												</h3>
+
+											</div>
+
+											<!-- Plugins: AfterDisplayTitle -->
+
+											<!-- K2 Plugins: K2AfterDisplayTitle -->
+
+
+											<div class="catItemBody">
+												<!-- Plugins: BeforeDisplayContent -->
+
+												<!-- K2 Plugins: K2BeforeDisplayContent -->
+
+
+												<!-- Item introtext -->
+												<div class="catItemIntroText">
+													<?php the_excerpt() ?></div>
+
+												<div class="clr"></div>
+
+
+												<!-- Plugins: AfterDisplayContent -->
+
+												<!-- K2 Plugins: K2AfterDisplayContent -->
+
+												<div class="clr"></div>
+											</div>
+
+
+											<div class="clr"></div>
 
 
 
+											<div class="clr"></div>
 
-								<section class="article-content clearfix" itemprop="articleBody">
 
-								</section>
+											<!-- Item "read more..." link -->
+											<div class="catItemReadMore">
+												<a class="k2ReadMore" href="<?php the_permalink() ?>">
+													Xem thêm</a>
+											</div>
 
-								<!-- footer -->
-								<!-- //footer -->
+											<div class="clr"></div>
 
-								<hr class="divider-vertical">
-								<?php
-									if ( comments_open() || get_comments_number() ) :
-										// comments_template();
-									endif;
+
+											<!-- Plugins: AfterDisplay -->
+
+											<!-- K2 Plugins: K2AfterDisplay -->
+
+											<div class="clr"></div>
+										</div>
+										<!-- End K2 Item Layout -->
+									</div>
+									<div class="clr"></div>
+									<?php
+
+									endwhile;
+
+
 									?>
 
 
 
-							</article>
-							<!-- //Article -->
+									<?php the_posts_navigation(); ?>
+								</div>
 
 
+
+
+							</div>
+
+							<!-- Pagination -->
 						</div>
+						<!-- End K2 Category Layout -->
+
+						<!-- JoomlaWorks "K2" (v2.10.3) | Learn more about K2 at https://getk2.org -->
+
+
 					</div>
 				</div>
 			</div>
 			<!-- //MAIN CONTENT -->
 
 			<!-- SIDEBAR 2 -->
-			<div class="t3-sidebar t3-sidebar-2 span3 t3respon" style="min-height: 981px;">
+			<div class="t3-sidebar t3-sidebar-2 span3 t3respon" style="min-height: 1490px;">
 				<?php get_sidebar(); ?>
 			</div>
 			<!-- //SIDEBAR 2 -->
